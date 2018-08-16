@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/calc.js"></script>
+</head>
+<body background='imagen/fondo.jpg'>
+	<div class="bg"></div>
+	<div class="menu">
+		<form name="form">
+			<input class="textview" name="textview">
+		</form>
+		<table>
+			<tr>
+				<td><input class="boton" type="button" value="C" onclick="limpiar();"></td>
+				<td><input class="boton"  type="button" value="<" onclick="volver();"></td>
+				<td><input class="boton"  type="button" value="/" onclick="insertar('/');"></td>
+				<td><input class="boton"  type="button" value="x" onclick="insertar('*');"></td>
+			</tr>
+			<tr>
+				<td><input class="boton"  type="button" value="7" onclick="insertar(7);"></td>
+				<td><input class="boton"  type="button" value="8" onclick="insertar(8);"></td>
+				<td><input class="boton"  type="button" value="9" onclick="insertar(9);"></td>
+				<td><input class="boton"  type="button" value="-" onclick="insertar('-');"></td>
+			</tr>
+			<tr>
+				<td><input class="boton"  type="button" value="4" onclick="insertar(4);"></td>
+				<td><input class="boton"  type="button" value="5" onclick="insertar(5);"></td>
+				<td><input class="boton"  type="button" value="6" onclick="insertar(6);"></td>
+				<td><input class="boton"  type="button" value="+" onclick="insertar('+');"></td>
+			</tr>
+			<tr>
+				<td><input class="boton"  type="button" value="1" onclick="insertar(1);"></td>
+				<td><input class="boton"  type="button" value="2" onclick="insertar(2);"></td>
+				<td><input class="boton"  type="button" value="3" onclick="insertar(3);"></td>
+				<td rowspan="5"><input class="boton" style="height: 106px "  type="button" value="=" onclick="equal();"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input class="boton" style="width: 106px " type="button" value="0" onclick="insertar(0);"></td>
+				<td><input class="boton"  type="button" value="." onclick="insertar('.');"></td>
+				
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
